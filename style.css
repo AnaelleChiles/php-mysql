@@ -1,0 +1,11 @@
+body{
+	background-color: rgb(204, 116, 100);
+	margin:auto; 
+	font-family:Andovine, serif;
+	display: block;
+    color: whitesmoke;
+}
+
+title{
+    text-decoration: underline;
+}
