@@ -25,17 +25,24 @@
 
         <!-- inclusion de l'entête du site -->
         <?php include_once('header.php'); ?>
-        
-        <?php foreach(getRecipes($recipes) as $recipe) : ?>
-            <article>
-                <h3><?php echo $recipe['title']; ?></h3>
-                <div><?php echo $recipe['recipe']; ?></div>
-                <i><?php echo displayAuthor($recipe['author'], $users); ?></i>
-            </article>
-        <?php endforeach ?>
+
+        <h1>Message bien reçu !</h1>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Rappel de vos informations</h5>
+                <p class="card-text"><b>Email</b> :
+                    <?php echo $_GET['email']; ?>
+                </p>
+                <p class="card-text"><b>Message</b> :
+                    <?php echo $_GET['message']; ?>
+                </p>
+            </div>
+        </div>
+
     </div>
 
     <!-- inclusion du bas de page du site -->
     <?php include_once('footer.php'); ?>
 </body>
+
 </html>

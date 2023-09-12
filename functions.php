@@ -22,10 +22,7 @@
         for ($i = 0; $i < count($users); $i++) {
             $author = $users[$i];
             if ($authorEmail === $author['mail']) {
-                return $author['nom'] . $author['prenom'] .'(' . $author['age'] . ' ans)';
-            }
-            else{
-                return " ";
+                return $author['nom'] .' '. $author['prenom'] .'(' . $author['age'] . ' ans)';
             }
         }
     }

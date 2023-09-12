@@ -16,7 +16,7 @@
             'title' => 'Escalope milanaise',
             'recipe' => '',
             'author' => 'mathieu.nebra@exemple.com',
-            'is_enabled' => false,
+            'is_enabled' => true,
         ],
         [
             'title' => "Patate arc en ciel a la poudre d'escampette",
@@ -34,13 +34,13 @@
             'age' => 80,
          ],
         [
-            'mail' => 'mickael.andrieu@exemple.com',
+            'mail' => 'mathieu.nebra@exemple.com',
             'nom' => 'Sanglante',
 			'prenom' => 'Clementine',
             'age' => 36,
          ],
         [
-            'mail' => 'mathieu.nebra@exemple.com',
+            'mail' => 'jsp.monNom@gmal.com',
             'nom' => 'Pain',
 			'prenom' => 'Jean-mis',
             'age' => 45,
