@@ -19,8 +19,7 @@
             include_once('variables.php');
             include_once('functions.php');
         ?>
-		
-		
+				
 	 <?php include_once('login.php'); ?>
         <h1>Site de recettes</h1>
 
