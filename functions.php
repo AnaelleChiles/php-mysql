@@ -24,6 +24,9 @@
             if ($authorEmail === $author['mail']) {
                 return $author['nom'] .' '. $author['prenom'] .'(' . $author['age'] . ' ans)';
             }
+            else{
+                return 'Non reconnue';
+            }
         }
     }
 

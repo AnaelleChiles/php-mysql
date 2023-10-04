@@ -1,5 +1,5 @@
 <?php
-    $recipes = [
+    /*$recipes = [
         [
             'title' => 'Cassoulet',
             'recipe' => '',
@@ -24,7 +24,7 @@
             'author' => 'jsp.monNom@gmal.com',
             'is_enabled' => true,
         ]
-    ];
+    ];*/
 		
 	$users = [
         [
