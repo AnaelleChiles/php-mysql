@@ -48,9 +48,16 @@
                         <?php echo $recipe['recipe']; ?>
                     </div>
                     <i>
-                        <?php echo displayAuthor($recipe['author'], $users); ?>
+                        <?php if ($recipe['author'] == $_SESSION['LOGGED_USER']) { ?>
+                            <button type="button">Editer l'article</button>
+                            <button type="button">Supprimer l'article</button>
+
+                        <?php } else {
+                            echo displayAuthor($recipe['author'], $users);
+                        } ?>
                     </i>
                 </article>
+                </br>
             <?php endforeach; ?>
 
         <?php endif; ?>

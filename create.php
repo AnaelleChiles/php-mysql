@@ -1,4 +1,3 @@
-<!-- contact.php -->
 <!DOCTYPE html>
 <html>
 
@@ -14,20 +13,18 @@
     <div class="container">
 
         <?php include_once('header.php'); ?>
-        <h1>Contactez nous</h1>
-        <form action="submit_contact.php" method="POST" enctype="multipart/form-data">
+        <h1>Ajouter une recette</h1>
+        <form action="<?php echo('post_create.php');?>" method="POST" enctype="multipart/form-data">
             <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" name="email" class="form-control">
+                <label for="title" class="form-label">Titre</label>
+                <input type="title" name="title" id="title" class="form-control">
+                <div id="title-help" class="form-text">Choisissez un titre percutant!!!!</div>
             </div>
             <div>
-                <label for="message" class="form-label">Votre message</label>
-                <textarea placeholder="Exprimez vous" name="message" class="form-control"></textarea>
+                <label for="recipe" class="form-label">Description de la recette</label>
+                <textarea placeholder="Seulemment du contenu vous appartenant ou libre de droits." name="recipe" id="recipe" class="form-control"></textarea>
             </div>
-			<div class="mb-3">
-				<label for="screenshot" class="form-label">Votre capture d'écran</label>
-                <input type="file" class="form-control" id="screenshot" name="screenshot"/>
-            </div>
+            <br>
             <button type="submit" class="btn btn-primary">Envoyer</button>
         </form>
 
