@@ -40,10 +40,11 @@
         $recipe = $_POST['recipe'];
 
 
-        $insertRecipeStatement = $db->prepare('UPDATE recipes SET title = :title, recipe = :recipe');
+        $insertRecipeStatement = $db->prepare('UPDATE recipes SET title = :title, recipe = :recipe WHERE recipe_id=:id');
         $insertRecipeStatement->execute([
             'title' => $title,
             'recipe' => $recipe,
+            'id'=> $id,
         ]);
         ?>
 
