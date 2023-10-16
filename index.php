@@ -50,7 +50,7 @@
                     <i>
                         <?php if ($recipe['author'] == $_SESSION['LOGGED_USER']) { ?>
                             <a href="update.php?id=<?php echo $recipe['recipe_id']?>"><button type="button" >Editer l'article</button></a>
-                            <a href="delete.php" id=<?php echo $recipe['recipe_id'] ?>><button type="button" >Supprimer l'article</button></a>
+                            <a href="delete.php?id=<?php echo $recipe['recipe_id']?>"><button type="button" >Supprimer l'article</button></a>
 
                         <?php } else {
                             echo displayAuthor($recipe['author'], $users);
